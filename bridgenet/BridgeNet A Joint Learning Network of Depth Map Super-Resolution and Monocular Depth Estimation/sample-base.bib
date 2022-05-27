@@ -1,0 +1,848 @@
+
+%% Journals
+%
+%% First the Full Name is given, then the abbreviation used in the AMS Math
+%% Reviews, with an indication if it could not be found there.
+%% Note the 2nd overwrites the 1st, so swap them if you want the full name.
+%
+% %{AMS}
+% @String{AMSTrans = "American Mathematical Society Translations" }
+% @String{AMSTrans = "Amer. Math. Soc. Transl." }
+% @String{BullAMS = "Bulletin of the American Mathematical Society" }
+% @String{BullAMS = "Bull. Amer. Math. Soc." }
+% @String{ProcAMS = "Proceedings of the American Mathematical Society" }
+% @String{ProcAMS = "Proc. Amer. Math. Soc." }
+% @String{TransAMS = "Transactions of the American Mathematical Society" }
+% @String{TransAMS = "Trans. Amer. Math. Soc." }
+%
+% %ACM
+% @String{CACM = "Communications of the {ACM}" }
+% @String{CACM = "Commun. {ACM}" }
+% @String{CompServ = "Comput. Surveys" }
+% @String{JACM = "J. ACM" }
+% @String{ACMMathSoft = "{ACM} Transactions on Mathematical Software" }
+% @String{ACMMathSoft = "{ACM} Trans. Math. Software" }
+% @String{SIGNUM = "{ACM} {SIGNUM} Newsletter" }
+% @String{SIGNUM = "{ACM} {SIGNUM} Newslett." }
+%
+% @String{AmerSocio = "American Journal of Sociology" }
+% @String{AmerStatAssoc = "Journal of the American Statistical Association" }
+% @String{AmerStatAssoc = "J. Amer. Statist. Assoc." }
+% @String{ApplMathComp = "Applied Mathematics and Computation" }
+% @String{ApplMathComp = "Appl. Math. Comput." }
+% @String{AmerMathMonthly = "American Mathematical Monthly" }
+% @String{AmerMathMonthly = "Amer. Math. Monthly" }
+% @String{BIT = "{BIT}" }
+% @String{BritStatPsych = "British Journal of Mathematical and Statistical
+%          Psychology" }
+% @String{BritStatPsych = "Brit. J. Math. Statist. Psych." }
+% @String{CanMathBull = "Canadian Mathematical Bulletin" }
+% @String{CanMathBull = "Canad. Math. Bull." }
+% @String{CompApplMath = "Journal of Computational and Applied Mathematics" }
+% @String{CompApplMath = "J. Comput. Appl. Math." }
+% @String{CompPhys = "Journal of Computational Physics" }
+% @String{CompPhys = "J. Comput. Phys." }
+% @String{CompStruct = "Computers and Structures" }
+% @String{CompStruct = "Comput. \& Structures" }
+% @String{CompJour = "The Computer Journal" }
+% @String{CompJour = "Comput. J." }
+% @String{CompSysSci = "Journal of Computer and System Sciences" }
+% @String{CompSysSci = "J. Comput. System Sci." }
+% @String{Computing = "Computing" }
+% @String{ContempMath = "Contemporary Mathematics" }
+% @String{ContempMath = "Contemp. Math." }
+% @String{Crelle = "Crelle's Journal" }
+% @String{GiornaleMath = "Giornale di Mathematiche" }
+% @String{GiornaleMath = "Giorn. Mat." } % didn't find in AMS MR., ibid.
+%
+% %IEEE
+% @String{Computer = "{IEEE} Computer" }
+% @String{IEEETransComp = "{IEEE} Transactions on Computers" }
+% @String{IEEETransComp = "{IEEE} Trans. Comput." }
+% @String{IEEETransAC = "{IEEE} Transactions on Automatic Control" }
+% @String{IEEETransAC = "{IEEE} Trans. Automat. Control" }
+% @String{IEEESpec = "{IEEE} Spectrum" } % didn't find in AMS MR
+% @String{ProcIEEE = "Proceedings of the {IEEE}" }
+% @String{ProcIEEE = "Proc. {IEEE}" } % didn't find in AMS MR
+% @String{IEEETransAeroElec = "{IEEE} Transactions on Aerospace and Electronic
+%     Systems" }
+% @String{IEEETransAeroElec = "{IEEE} Trans. Aerospace Electron. Systems" }
+% @String{TIP = "{IEEE} Trans Image Process." }
+%
+% @String{IMANumerAna = "{IMA} Journal of Numerical Analysis" }
+% @String{IMANumerAna = "{IMA} J. Numer. Anal." }
+% @String{InfProcLet = "Information Processing Letters" }
+% @String{InfProcLet = "Inform. Process. Lett." }
+% @String{InstMathApp = "Journal of the Institute of Mathematics and
+%     its Applications" }
+% @String{InstMathApp = "J. Inst. Math. Appl." }
+% @String{IntControl = "International Journal of Control" }
+% @String{IntControl = "Internat. J. Control" }
+% @String{IntNumerEng = "International Journal for Numerical Methods in
+%     Engineering" }
+% @String{IntNumerEng = "Internat. J. Numer. Methods Engrg." }
+% @String{IntSuper = "International Journal of Supercomputing Applications" }
+% @String{IntSuper = "Internat. J. Supercomputing Applic." } % didn't find
+%%% in AMS MR
+% @String{Kibernetika = "Kibernetika" }
+% @String{JResNatBurStand = "Journal of Research of the National Bureau
+%     of Standards" }
+% @String{JResNatBurStand = "J. Res. Nat. Bur. Standards" }
+% @String{LinAlgApp = "Linear Algebra and its Applications" }
+% @String{LinAlgApp = "Linear Algebra Appl." }
+% @String{MathAnaAppl = "Journal of Mathematical Analysis and Applications" }
+% @String{MathAnaAppl = "J. Math. Anal. Appl." }
+% @String{MathAnnalen = "Mathematische Annalen" }
+% @String{MathAnnalen = "Math. Ann." }
+% @String{MathPhys = "Journal of Mathematical Physics" }
+% @String{MathPhys = "J. Math. Phys." }
+% @String{MathComp = "Mathematics of Computation" }
+% @String{MathComp = "Math. Comp." }
+% @String{MathScand = "Mathematica Scandinavica" }
+% @String{MathScand = "Math. Scand." }
+% @String{TablesAidsComp = "Mathematical Tables and Other Aids to Computation" }
+% @String{TablesAidsComp = "Math. Tables Aids Comput." }
+% @String{NumerMath = "Numerische Mathematik" }
+% @String{NumerMath = "Numer. Math." }
+% @String{PacificMath = "Pacific Journal of Mathematics" }
+% @String{PacificMath = "Pacific J. Math." }
+% @String{ParDistComp = "Journal of Parallel and Distributed Computing" }
+% @String{ParDistComp = "J. Parallel and Distrib. Comput." } % didn't find
+%%% in AMS MR
+% @String{ParComputing = "Parallel Computing" }
+% @String{ParComputing = "Parallel Comput." }
+% @String{PhilMag = "Philosophical Magazine" }
+% @String{PhilMag = "Philos. Mag." }
+% @String{ProcNAS = "Proceedings of the National Academy of Sciences
+%                    of the USA" }
+% @String{ProcNAS = "Proc. Nat. Acad. Sci. U. S. A." }
+% @String{Psychometrika = "Psychometrika" }
+% @String{QuartMath = "Quarterly Journal of Mathematics, Oxford, Series (2)" }
+% @String{QuartMath = "Quart. J. Math. Oxford Ser. (2)" }
+% @String{QuartApplMath = "Quarterly of Applied Mathematics" }
+% @String{QuartApplMath = "Quart. Appl. Math." }
+% @String{RevueInstStat = "Review of the International Statisical Institute" }
+% @String{RevueInstStat = "Rev. Inst. Internat. Statist." }
+%
+% %SIAM
+% @String{JSIAM = "Journal of the Society for Industrial and Applied
+%     Mathematics" }
+% @String{JSIAM = "J. Soc. Indust. Appl. Math." }
+% @String{JSIAMB = "Journal of the Society for Industrial and Applied
+%     Mathematics, Series B, Numerical Analysis" }
+% @String{JSIAMB = "J. Soc. Indust. Appl. Math. Ser. B Numer. Anal." }
+% @String{SIAMAlgMeth = "{SIAM} Journal on Algebraic and Discrete Methods" }
+% @String{SIAMAlgMeth = "{SIAM} J. Algebraic Discrete Methods" }
+% @String{SIAMAppMath = "{SIAM} Journal on Applied Mathematics" }
+% @String{SIAMAppMath = "{SIAM} J. Appl. Math." }
+% @String{SIAMComp = "{SIAM} Journal on Computing" }
+% @String{SIAMComp = "{SIAM} J. Comput." }
+% @String{SIAMMatrix = "{SIAM} Journal on Matrix Analysis and Applications" }
+% @String{SIAMMatrix = "{SIAM} J. Matrix Anal. Appl." }
+% @String{SIAMNumAnal = "{SIAM} Journal on Numerical Analysis" }
+% @String{SIAMNumAnal = "{SIAM} J. Numer. Anal." }
+% @String{SIAMReview = "{SIAM} Review" }
+% @String{SIAMReview = "{SIAM} Rev." }
+% @String{SIAMSciStat = "{SIAM} Journal on Scientific and Statistical
+%     Computing" }
+% @String{SIAMSciStat = "{SIAM} J. Sci. Statist. Comput." }
+%
+% @String{SoftPracExp = "Software Practice and Experience" }
+% @String{SoftPracExp = "Software Prac. Experience" } % didn't find in AMS MR
+% @String{StatScience = "Statistical Science" }
+% @String{StatScience = "Statist. Sci." }
+% @String{Techno = "Technometrics" }
+% @String{USSRCompMathPhys = "{USSR} Computational Mathematics and Mathematical
+%     Physics" }
+% @String{USSRCompMathPhys = "{U. S. S. R.} Comput. Math. and Math. Phys." }
+% @String{VLSICompSys = "Journal of {VLSI} and Computer Systems" }
+% @String{VLSICompSys = "J. {VLSI} Comput. Syst." }
+% @String{ZAngewMathMech = "Zeitschrift fur Angewandte Mathematik und
+%     Mechanik" }
+% @String{ZAngewMathMech = "Z. Angew. Math. Mech." }
+% @String{ZAngewMathPhys = "Zeitschrift fur Angewandte Mathematik und Physik" }
+% @String{ZAngewMathPhys = "Z. Angew. Math. Phys." }
+%
+%% Publishers % ================================================= |
+%
+% @String{Academic = "Academic Press" }
+% @String{ACMPress = "{ACM} Press" }
+% @String{AdamHilger = "Adam Hilger" }
+% @String{AddisonWesley = "Addison-Wesley" }
+% @String{AllynBacon = "Allyn and Bacon" }
+% @String{AMS = "American Mathematical Society" }
+% @String{Birkhauser = "Birkha{\"u}ser" }
+% @String{CambridgePress = "Cambridge University Press" }
+% @String{Chelsea = "Chelsea" }
+% @String{ClaredonPress = "Claredon Press" }
+% @String{DoverPub = "Dover Publications" }
+% @String{Eyolles = "Eyolles" }
+% @String{HoltRinehartWinston = "Holt, Rinehart and Winston" }
+% @String{Interscience = "Interscience" }
+% @String{JohnsHopkinsPress = "The Johns Hopkins University Press" }
+% @String{JohnWileySons = "John Wiley and Sons" }
+% @String{Macmillan = "Macmillan" }
+% @String{MathWorks = "The Math Works Inc." }
+% @String{McGrawHill = "McGraw-Hill" }
+% @String{NatBurStd = "National Bureau of Standards" }
+% @String{NorthHolland = "North-Holland" }
+% @String{OxfordPress = "Oxford University Press" }  %address Oxford or London?
+% @String{PergamonPress = "Pergamon Press" }
+% @String{PlenumPress = "Plenum Press" }
+% @String{PrenticeHall = "Prentice-Hall" }
+% @String{SIAMPub = "{SIAM} Publications" }
+% @String{Springer = "Springer-Verlag" }
+% @String{TexasPress = "University of Texas Press" }
+% @String{VanNostrand = "Van Nostrand" }
+% @String{WHFreeman = "W. H. Freeman and Co." }
+%
+%%Entries
+
+%introduction
+
+@inproceedings{DBLP:conf/iros/KerlSC13,
+  author    = {Christian Kerl and
+               J{\"{u}}rgen Sturm and
+               Daniel Cremers},
+  title     = {Dense Visual {SLAM} for {RGB-D} Cameras},
+  booktitle = {{IEEE/RSJ} International Conference on Intelligent Robots and
+               Systems},
+  pages     = {2100--2106},
+  year      = {2013},
+}
+
+@article{DBLP:journals/pami/GeLYT19,
+  author    = {Liuhao Ge and
+               Hui Liang and
+               Junsong Yuan and
+               Daniel Thalmann},
+  title     = {Real-Time 3D Hand Pose Estimation with 3D Convolutional Neural Networks},
+  journal   = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  volume    = {41},
+  number    = {4},
+  pages     = {956--970},
+  year      = {2019},
+}
+
+@article{DBLP:journals/pami/ImHCJJK19,
+  author    = {Sunghoon Im and
+               Hyowon Ha and
+               Gyeongmin Choe and
+               Hae{-}Gon Jeon and
+               Kyungdon Joo and
+               In So Kweon},
+  title     = {Accurate 3D Reconstruction from Small Motion Clip for Rolling Shutter
+               Cameras},
+  journal   = {IEEE Transactions on Pattern Analysis and Machine Intelligence},  
+  volume    = {41},
+  number    = {4},
+  pages     = {775--787},
+  year      = {2019},
+}
+
+@article{DBLP:journals/corr/abs-1907-06781,
+  title={Rethinking RGB-D Salient Object Detection: Models, Data Sets, and Large-Scale Benchmarks},
+  author={Fan, Deng-Ping and Lin, Zheng and Zhang, Zhao and Zhu, Menglong and Cheng, Ming-Ming},
+  journal={IEEE Transactions on Neural Networks and Learning Systems},
+  volume={32},
+  number={5},
+  pages={2075--2089},
+  year={2020},
+}
+
+%related work
+
+@article{DBLP:journals/corr/abs-1708-09105,
+  title={Simultaneously Color-Depth Super-Resolution with Conditional Generative Adversarial Network},
+  author={Zhao, Lijun and Bai, Huihui and Liang, Jie and Zeng, Bing and Wang, Anhong and Zhao, Yao},
+  journal={Pattern Recognition},
+  volume={88},
+  pages={356--369},
+  year={2019},
+}
+
+@inproceedings{HuiLT16,
+  author    = {Tak{-}Wai Hui and
+               Chen Change Loy and
+               Xiaoou Tang},
+  title     = {Depth Map Super-Resolution by Deep Multi-Scale Guidance},
+  booktitle = {European Conference on Computer Vision},
+  volume    = {9907},
+  pages     = {353--369},
+  year      = {2016},
+}
+
+@article{DBLP:journals/isci/ZuoFYSW19,
+  author    = {Yi{-}Fan Zuo and
+               Yuming Fang and
+               Yong Yang and
+               Xiwu Shang and
+               Bin Wang},
+  title     = {Residual Dense Network For Intensity-Guided Depth Map Enhancement},
+  journal   = {Information Sciences},
+  volume    = {495},
+  pages     = {52--64},
+  year      = {2019},
+}
+
+@article{DBLP:journals/tip/YeSWYXLL20,
+  author    = {Xinchen Ye and
+               Baoli Sun and
+               Zhihui Wang and
+               Jingyu Yang and
+               Rui Xu and
+               Haojie Li and
+               Baopu Li},
+  title     = {PMBANet: Progressive Multi-Branch Aggregation Network for Scene Depth
+               Super-Resolution},
+  journal   = {IEEE Transactions on Image Processing},
+  volume    = {29},
+  pages     = {7427--7442},
+  year      = {2020},
+}
+
+@article{DBLP:journals/tip/GuoLGCFH19,
+  author    = {Chunle Guo and
+               Chongyi Li and
+               Jichang Guo and
+               Runmin Cong and
+               Huazhu Fu and
+               Ping Han},
+  title     = {Hierarchical Features Driven Residual Learning for Depth Map Super-Resolution},
+  journal   = {IEEE Transactions on Image Processing},
+  volume    = {28},
+  number    = {5},
+  pages     = {2545--2557},
+  year      = {2019},
+}
+
+@inproceedings{DBLP:conf/nips/EigenPF14,
+  author    = {David Eigen and
+               Christian Puhrsch and
+               Rob Fergus},
+  title     = {Depth Map Prediction from a Single Image using a Multi-Scale Deep
+               Network},
+  booktitle = {Advances in Neural Information Processing Systems
+              },
+  pages     = {2366--2374},
+  year      = {2014},
+}
+
+@inproceedings{DBLP:conf/3dim/LainaRBTN16,
+  author    = {Iro Laina and
+               Christian Rupprecht and
+               Vasileios Belagiannis and
+               Federico Tombari and
+               Nassir Navab},
+  title     = {Deeper Depth Prediction with Fully Convolutional Residual Networks},
+  booktitle = {International Conference on 3D Vision},
+  pages     = {239--248},
+  year      = {2016},
+}
+
+@article{DBLP:journals/tcsv/CaoWS18,
+  author    = {Yuanzhouhan Cao and
+               Zifeng Wu and
+               Chunhua Shen},
+  title     = {Estimating Depth From Monocular Images as Classification Using Deep
+               Fully Convolutional Residual Networks},
+  journal   = {IEEE Transactions on Circuits and Systems for Video Technology},
+  volume    = {28},
+  number    = {11},
+  pages     = {3174--3182},
+  year      = {2018},
+}
+
+@inproceedings{DBLP:conf/eccv/ZhangCXJLY18,
+  author    = {Zhenyu Zhang and
+               Zhen Cui and
+               Chunyan Xu and
+               Zequn Jie and
+               Xiang Li and
+               Jian Yang},
+  title     = {Joint Task-Recursive Learning for Semantic Segmentation and Depth
+               Estimation},
+  booktitle = {European Conference on Computer Vision},
+  volume    = {11214},
+  pages     = {238--255},
+  year      = {2018},
+}
+@article{DBLP:journals/corr/abs-2101-07422,
+  author    = {Lei He and
+               Jiwen Lu and
+               Guanghui Wang and
+               Shiyu Song and
+               Jie Zhou},
+  title     = {SOSD-Net: Joint Semantic Object Segmentation and Depth Estimation
+               from Monocular images},
+  journal={Neurocomputing},
+  volume={440},
+  pages={251--263},
+  year={2021},
+ }
+
+@inproceedings{DBLP:conf/eccv/WangZWLR20,
+  author    = {Lijun Wang and
+               Jianming Zhang and
+               Yifan Wang and
+               Huchuan Lu and
+               Xiang Ruan},
+  title     = {CLIFFNet for Monocular Depth Estimation with Hierarchical Embedding
+               Loss},
+  booktitle = {European Conference on Computer Vision},
+  volume    = {12350},
+  pages     = {316--331},
+  year      = {2020},
+}
+
+@InProceedings{Sun2021cvpr,
+    author    = {Sun, Baoli and Ye, Xinchen and Li, Baopu and Li, Haojie and Wang, Zhihui and Xu, Rui},
+    title     = {Learning Scene Structure Guidance via Cross-Task Knowledge Transfer for Single Depth Super-Resolution},
+    booktitle = {{IEEE} Conference on Computer Vision and Pattern Recognition},
+    year      = {2021},
+    pages     = {7792-7801}
+}
+
+% proposed method
+
+@inproceedings{DBLP:conf/aaai/YinRZF20,
+  author    = {Yu Yin and
+               Joseph P. Robinson and
+               Yulun Zhang and
+               Yun Fu},
+  title     = {Joint Super-Resolution and Alignment of Tiny Faces},
+  booktitle = {{AAAI} Conference on Artificial Intelligence               },
+  pages     = {12693--12700},
+  year      = {2020},
+}
+
+@inproceedings{DBLP:conf/eccv/WooPLK18,
+  author    = {Sanghyun Woo and
+               Jongchan Park and
+               Joon{-}Young Lee and
+               In So Kweon},
+  title     = {{CBAM:} Convolutional Block Attention Module},
+  booktitle = {European Conference on Computer Vision},
+  volume    = {11211},
+  pages     = {3--19},
+  year      = {2018},
+}
+
+@article{DBLP:journals/tip/SindagiP20,
+  author    = {Vishwanath A. Sindagi and
+               Vishal M. Patel},
+  title     = {{HA-CCN:} Hierarchical Attention-Based Crowd Counting Network},
+  journal   = {IEEE Transactions on Image Processing},
+  volume    = {29},
+  pages     = {323--335},
+  year      = {2020},
+}
+
+
+@article{DBLP:journals/tmm/WangXCZSY20,
+  author    = {Jin Wang and
+               Wei Xu and
+               Jian{-}Feng Cai and
+               Qing Zhu and
+               Yunhui Shi and
+               Baocai Yin},
+  title     = {Multi-Direction Dictionary Learning Based Depth Map Super-Resolution
+               With Autoregressive Modeling},
+  journal   = {IEEE Transactions on Multimedia},
+  volume    = {22},
+  number    = {6},
+  pages     = {1470--1484},
+  year      = {2020},
+}
+
+% experiments
+
+@inproceedings{LuSMLD12,
+  author    = {Jiangbo Lu and
+               Keyang Shi and
+               Dongbo Min and
+               Liang Lin and
+               Minh N. Do},
+  title     = {Cross-Based Local Multipoint Filtering},
+  booktitle = {{IEEE} Conference on Computer Vision and Pattern Recognition
+              },
+  pages     = {430--437},
+  year      = {2012},
+}
+
+@inproceedings{0001TT13,
+  author    = {Ming{-}Yu Liu and
+               Oncel Tuzel and
+               Yuichi Taguchi},
+  title     = {Joint Geodesic Upsampling of Depth Images},
+  booktitle = {{IEEE} Conference on Computer Vision and Pattern Recognition
+              },
+  pages     = {169--176},
+  year      = {2013},
+}
+
+@inproceedings{DBLP:conf/iccv/FerstlRRRB13,
+  author    = {David Ferstl and
+               Christian Reinbacher and
+               Ren{\'{e}} Ranftl and
+               Matthias R{\"{u}}ther and
+               Horst Bischof},
+  title     = {Image Guided Depth Upsampling Using Anisotropic Total Generalized
+               Variation},
+  booktitle = {{IEEE} International Conference on Computer Vision},
+  pages     = {993--1000},
+  year      = {2013},
+}
+
+@inproceedings{DBLP:conf/icmcs/XieCFS14,
+  author    = {Jun Xie and
+               Cheng{-}Chuan Chou and
+               Rog{\'{e}}rio Schmidt Feris and
+               Ming{-}Ting Sun},
+  title     = {Single Depth Image Super Resolution and Denoising via Coupled Dictionary
+               Learning with Local Constraints and Shock Filtering},
+  booktitle = {{IEEE} International Conference on Multimedia and Expo},
+  pages     = {1--6},
+  year      = {2014},
+}
+
+@inproceedings{DBLP:conf/eccv/AodhaCNB12,
+  author    = {Oisin Mac Aodha and
+               Neill D. F. Campbell and
+               Arun Nair and
+               Gabriel J. Brostow},
+  title     = {Patch Based Synthesis for Single Depth Image Super-Resolution},
+  booktitle = {European Conference on Computer Vision},
+  volume    = {7574},
+  pages     = {71--84},
+  year      = {2012},
+}
+
+@article{DBLP:journals/tip/XieFS16,
+  author    = {Jun Xie and
+               Rog{\'{e}}rio Schmidt Feris and
+               Ming{-}Ting Sun},
+  title     = {Edge-Guided Single Depth Image Super Resolution},
+  journal   = {IEEE Transactions on Image Processing},
+  volume    = {25},
+  number    = {1},
+  pages     = {428--438},
+  year      = {2016},
+}
+
+@inproceedings{DBLP:conf/eccv/DongLHT14,
+  author    = {Chao Dong and
+               Chen Change Loy and
+               Kaiming He and
+               Xiaoou Tang},
+  title     = {Learning a Deep Convolutional Network for Image Super-Resolution},
+  booktitle = {European Conference on Computer Vision},
+  volume    = {8692},
+  pages     = {184--199},
+  year      = {2014},
+}
+
+@inproceedings{DBLP:conf/eccv/RieglerRB16,
+  author    = {Gernot Riegler and
+               Matthias R{\"{u}}ther and
+               Horst Bischof},
+  title     = {ATGV-Net: Accurate Depth Super-Resolution},
+  booktitle = {European Conference on Computer Vision},
+  volume    = {9907},
+  pages     = {268--284},
+  year      = {2016},
+}
+
+
+@inproceedings{DBLP:conf/cvpr/GuZGCCZ17,
+  author    = {Shuhang Gu and
+               Wangmeng Zuo and
+               Shi Guo and
+               Yunjin Chen and
+               Chongyu Chen and
+               Lei Zhang},
+  title     = {Learning Dynamic Guidance for Depth Image Enhancement},
+  booktitle = {{IEEE} Conference on Computer Vision and Pattern Recognition},
+  pages     = {712--721},
+  year      = {2017},
+}
+
+@inproceedings{DBLP:conf/icassp/YeDL18,
+  author    = {Xinchen Ye and
+               Xiangyue Duan and
+               Haojie Li},
+  title     = {Depth Super-Resolution with Deep Edge-Inference Network and Edge-Guided
+               Depth Filling},
+  booktitle = {{IEEE} International Conference on Acoustics, Speech and Signal
+               Processing},
+  pages     = {1398--1402},
+  year      = {2018},
+}
+
+@article{WenSLLF19,
+  author    = {Yang Wen and
+               Bin Sheng and
+               Ping Li and
+               Weiyao Lin and
+               David Dagan Feng},
+  title     = {Deep Color Guided Coarse-to-Fine Convolutional Network Cascade for
+               Depth Image Super-Resolution},
+  journal   = {IEEE Transactions on Image Processing},
+  volume    = {28},
+  number    = {2},
+  pages     = {994--1006},
+  year      = {2019},
+}
+
+@inproceedings{LutioDWS19,
+  author    = {Riccardo de Lutio and
+               Stefano D'Aronco and
+               Jan Dirk Wegner and
+               Konrad Schindler},
+  title     = {Guided Super-Resolution As Pixel-to-Pixel Transformation},
+  booktitle = {{IEEE} International Conference on Computer Vision
+               },
+  pages     = {8828--8836},
+   year      = {2019},
+}
+
+@inproceedings{DBLP:conf/eccv/LiHA016,
+  author    = {Yijun Li and
+               Jia{-}Bin Huang and
+               Narendra Ahuja and
+               Ming{-}Hsuan Yang},
+  title     = {Deep Joint Image Filtering},
+  booktitle = {European Conference on Computer Vision},
+  volume    = {9908},
+  pages     = {154--169},
+  year      = {2016},
+}
+
+@inproceedings{DBLP:conf/iccv/AlbaharH19,
+  author    = {Badour Albahar and
+               Jia{-}Bin Huang},
+  title     = {Guided Image-to-Image Translation With Bi-Directional Feature Transformation},
+  booktitle = {{IEEE} International Conference on Computer Vision
+               },
+  pages     = {9015--9024},
+  year      = {2019},
+}
+
+@inproceedings{DBLP:conf/cvpr/SuJSGLK19,
+  author    = {Hang Su and
+               Varun Jampani and
+               Deqing Sun and
+               Orazio Gallo and
+               Erik G. Learned{-}Miller and
+               Jan Kautz},
+  title     = {Pixel-Adaptive Convolutional Neural Networks},
+  booktitle = {{IEEE} Conference on Computer Vision and Pattern Recognition
+               },
+  pages     = {11166--11175},
+  year      = {2019},
+}
+
+
+@article{DBLP:journals/corr/abs-1903-11286,
+  author    = {Beomjun Kim and
+               Jean Ponce and
+               Bumsub Ham},
+  title     = {Deformable Kernel Networks for Guided Depth Map Upsampling},
+  journal={ArXiv Preprint ArXiv:1903.11286},
+  year={2019}
+}
+
+@inproceedings{ParkKTBK11,
+  author    = {Jaesik Park and
+               Hyeongwoo Kim and
+               Yu{-}Wing Tai and
+               Michael S. Brown and
+               In{-}So Kweon},
+  title     = {High Quality Depth Map Upsampling for 3D-TOF Cameras},
+  booktitle = {{IEEE} International Conference on Computer Vision},
+  pages     = {1623--1630},
+  year      = {2011},
+}
+
+@article{DBLP:journals/pami/HamCP18,
+  author    = {Bumsub Ham and
+               Minsu Cho and
+               Jean Ponce},
+  title     = {Robust Guided Image Filtering Using Nonconvex Potentials},
+  journal   = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  volume    = {40},
+  number    = {1},
+  pages     = {192--207},
+  year      = {2018},
+}
+
+@inproceedings{DBLP:conf/cvpr/PanDRLT019,
+  author    = {Jinshan Pan and
+               Jiangxin Dong and
+               Jimmy S. J. Ren and
+               Liang Lin and
+               Jinhui Tang and
+               Ming{-}Hsuan Yang},
+  title     = {Spatially Variant Linear Representation Models for Joint Filtering},
+  booktitle = {{IEEE} Conference on Computer Vision and Pattern Recognition
+               },
+  pages     = {1702--1711},
+  year      = {2019},
+}
+
+@article{DBLP:journals/ijcv/BakerSLRBS11,
+  author    = {Simon Baker and
+               Daniel Scharstein and
+               J. P. Lewis and
+               Stefan Roth and
+               Michael J. Black and
+               Richard Szeliski},
+  title     = {A Database and Evaluation Methodology for Optical Flow},
+  journal   = {International Journal of Computer Vision},
+  volume    = {92},
+  number    = {1},
+  pages     = {1--31},
+  year      = {2011},
+}
+
+@inproceedings{DBLP:conf/cvpr/HirschmullerS07,
+  author    = {Heiko Hirschm{\"{u}}ller and
+               Daniel Scharstein},
+  title     = {Evaluation of Cost Functions for Stereo Matching},
+  booktitle = {{IEEE} Conference on Computer Vision and Pattern
+               Recognition},
+  pages={1--8},
+  year      = {2007},
+}
+
+@inproceedings{DBLP:conf/dagm/ScharsteinHKKNWW14,
+  author    = {Daniel Scharstein and
+               Heiko Hirschm{\"{u}}ller and
+               York Kitajima and
+               Greg Krathwohl and
+               Nera Nesic and
+               Xi Wang and
+               Porter Westling},
+  title     = {High-Resolution Stereo Datasets with Subpixel-Accurate Ground Truth},
+  booktitle = {German Conference on Pattern Recognition},
+  volume    = {8753},
+  pages     = {31--42},
+  year      = {2014},
+}
+
+@inproceedings{DBLP:conf/cvpr/ScharsteinP07,
+  author    = {Daniel Scharstein and
+               Chris Pal},
+  title     = {Learning Conditional Random Fields for Stereo},
+  booktitle = {{IEEE} Computer Society Conference on Computer Vision and Pattern
+               Recognition},
+  pages={1--8},
+  year      = {2007},
+}
+
+@inproceedings{SilbermanHKF12,
+  author    = {Nathan Silberman and
+               Derek Hoiem and
+               Pushmeet Kohli and
+               Rob Fergus},
+  title     = {Indoor Segmentation and Support Inference from {RGBD} Images},
+  booktitle = {European Conference on Computer Vision},
+  volume    = {7576},
+  pages     = {746--760},
+  year      = {2012},
+}
+
+@InProceedings{DBLP:journals/corr/abs-2104-06174,
+    author    = {He, Lingzhi and Zhu, Hongguang and Li, Feng and Bai, Huihui and Cong, Runmin and Zhang, Chunjie and Lin, Chunyu and Liu, Meiqin and Zhao, Yao},
+    title     = {Towards Fast and Accurate Real-World Depth Super-Resolution: Benchmark Dataset and Baseline},
+    booktitle = {{IEEE} Conference on Computer Vision and Pattern Recognition},
+    year      = {2021},
+    pages     = {9229-9238}
+}
+
+@article{crm2019tcsvt,
+  title={ Review of Visual Saliency Detection with Comprehensive Information },
+  author={ Cong, Runmin and Lei, Jianjun and Fu, Huazhu and Cheng, Ming-Ming and Lin, Weisi and Huang, Qingming },
+  journal={ IEEE Transactions on Circuits and Systems for Video Technology },
+volume={29},
+  number={10},
+  pages={2941-2959},
+year={2019}
+}
+
+@article{crm2020tc,
+  title={ Going from {RGB} to {RGBD} Saliency: A Depth-Guided Transformation Model },
+  author={ Cong, Runmin and Lei, Jianjun and Fu, Huazhu and Hou, Junhui and Huang, Qingming and Kwong, Sam },
+  journal={ IEEE Transactions on Cybernetics },
+volume={50},
+  number={8},
+  pages={3627-3639},
+year={2020},
+}
+
+@article{ DPANet,
+  title={ {DPANet}: Depth Potentiality-Aware Gated Attention Network for {RGB-D} Salient Object Detection },
+  author={ Chen, Zuyao and Cong, Runmin and Xu, Qianqian and Huang, Qingming },
+  journal={ IEEE Transactions on Image Processing },
+  volume    = {30},
+  pages     = {7012--7024},
+  year={2021},
+}
+
+@article{crm2019tmm,
+  title={ {HSCS}: Hierarchical Sparsity Based Co-Saliency Detection for {RGBD} Images },
+  author={ Cong, Runmin and Lei, Jianjun and Fu, Huazhu and Huang, Qingming and Cao, Xiaochun and Ling, Nam },
+  journal={ IEEE Transactions on Multimedia },
+volume={21},
+  number={7},
+  pages={1660--1671},
+year={2019},
+}
+
+@article{crm2019tc,
+  title={ An Iterative Co-Saliency Framework for {RGBD} Images },
+  author={ Cong, Runmin and Lei, Jianjun and Fu, Huazhu and Lin, Weisi and Huang, Qingming and Cao, Xiaochun and Hou, Chunping },
+  journal={ IEEE Transactions on Cybernetics },
+  volume={49},
+  number={1},
+  pages={233--246},
+  year={2019},
+}
+
+@article{crm2018tip,
+  title={ Co-Saliency Detection for {RGBD} Images Based on Multi-Constraint Feature Matching and Cross Label Propagation },
+  author={ Cong, Runmin and Lei, Jianjun and Fu, Huazhu and Huang, Qingming and Cao, Xiaochun and Hou, Chunping },
+  journal={ IEEE Transactions on Image Processing },
+volume={27},
+  number={2},
+  pages={568--579},
+  year={2018},
+}
+
+@article{crm2016spl,
+  title={ Saliency Detection for Stereoscopic Images Based on Depth Confidence Analysis and Multiple Cues Fusion },
+  author={ Cong, Runmin and Lei, Jianjun and Zhang, Changqing and Huang, Qingming and Cao, Xiaochun and Hou, Chunping },
+  journal={ IEEE Signal Processing Letters },
+  volume={23},
+  number={6},
+  pages={819--823},
+year={2016},
+}
+
+@article{lcy2020tc,
+  title={ {ASIF-Net}: Attention Steered Interweave Fusion Network for {RGB-D} Salient Object Detection },
+  author={ Li, Chongyi and Cong, Runmin and Kwong, Sam and Hou, Junhui and Fu, Huazhu and Zhu, Guopu and Zhang, Dingwen and Huang, Qingming },
+  journal={ IEEE Transactions on Cybernetics },
+volume={50},
+  number={1},
+  pages={ 88-100},
+year={2021},
+}
+
+@inproceedings{eccv20,
+         title={ {RGB-D} Salient Object Detection with Cross-Modality Modulation and Selection },
+         author={ Li, Chongyi and Cong, Runmin and Piao, Yongri and Xu, Qianqian and Loy, Chen Change },
+         booktitle={European Conference on Computer Vision},
+pages={225-241},
+         year={ 2020}
+}

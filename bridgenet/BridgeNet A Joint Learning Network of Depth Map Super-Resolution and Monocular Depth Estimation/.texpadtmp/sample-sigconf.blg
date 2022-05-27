@@ -1,0 +1,117 @@
+This is BibTeX, Version 0.99d (TeX Live 2021)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: /Users/tq/Desktop/BridgeNet/Paper/BridgeNet A Joint Learning Network of Depth Map Super-Resolution and Monocular Depth Estimation/.texpadtmp/sample-sigconf.aux
+The style file: ../ACM-Reference-Format.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Database file #1: ../sample-base.bib
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=200001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Warning--empty publisher in DBLP:conf/iccv/AlbaharH19
+Warning--empty address in DBLP:conf/iccv/AlbaharH19
+Warning--empty publisher in DBLP:conf/eccv/AodhaCNB12
+Warning--empty address in DBLP:conf/eccv/AodhaCNB12
+Warning--empty publisher in LutioDWS19
+Warning--empty address in LutioDWS19
+Warning--empty publisher in DBLP:conf/eccv/DongLHT14
+Warning--empty address in DBLP:conf/eccv/DongLHT14
+Warning--empty publisher in DBLP:conf/nips/EigenPF14
+Warning--empty address in DBLP:conf/nips/EigenPF14
+Warning--empty publisher in DBLP:conf/iccv/FerstlRRRB13
+Warning--empty address in DBLP:conf/iccv/FerstlRRRB13
+Warning--empty publisher in DBLP:conf/cvpr/GuZGCCZ17
+Warning--empty address in DBLP:conf/cvpr/GuZGCCZ17
+Warning--empty publisher in DBLP:journals/corr/abs-2104-06174
+Warning--empty address in DBLP:journals/corr/abs-2104-06174
+Warning--empty publisher in DBLP:conf/cvpr/HirschmullerS07
+Warning--empty address in DBLP:conf/cvpr/HirschmullerS07
+Warning--empty publisher in HuiLT16
+Warning--empty address in HuiLT16
+Warning--empty publisher in DBLP:conf/iros/KerlSC13
+Warning--empty address in DBLP:conf/iros/KerlSC13
+Warning--no number and no volume in DBLP:journals/corr/abs-1903-11286
+Warning--page numbers missing in both pages and numpages fields in DBLP:journals/corr/abs-1903-11286
+Warning--empty publisher in DBLP:conf/3dim/LainaRBTN16
+Warning--empty address in DBLP:conf/3dim/LainaRBTN16
+Warning--empty publisher in eccv20
+Warning--empty address in eccv20
+Warning--empty publisher in DBLP:conf/eccv/LiHA016
+Warning--empty address in DBLP:conf/eccv/LiHA016
+Warning--empty publisher in 0001TT13
+Warning--empty address in 0001TT13
+Warning--empty publisher in LuSMLD12
+Warning--empty address in LuSMLD12
+Warning--empty publisher in DBLP:conf/cvpr/PanDRLT019
+Warning--empty address in DBLP:conf/cvpr/PanDRLT019
+Warning--empty publisher in ParkKTBK11
+Warning--empty address in ParkKTBK11
+Warning--empty publisher in DBLP:conf/eccv/RieglerRB16
+Warning--empty address in DBLP:conf/eccv/RieglerRB16
+Warning--empty publisher in DBLP:conf/dagm/ScharsteinHKKNWW14
+Warning--empty address in DBLP:conf/dagm/ScharsteinHKKNWW14
+Warning--empty publisher in DBLP:conf/cvpr/ScharsteinP07
+Warning--empty address in DBLP:conf/cvpr/ScharsteinP07
+Warning--empty publisher in SilbermanHKF12
+Warning--empty address in SilbermanHKF12
+Warning--empty publisher in DBLP:conf/cvpr/SuJSGLK19
+Warning--empty address in DBLP:conf/cvpr/SuJSGLK19
+Warning--empty publisher in Sun2021cvpr
+Warning--empty address in Sun2021cvpr
+Warning--empty publisher in DBLP:conf/eccv/WangZWLR20
+Warning--empty address in DBLP:conf/eccv/WangZWLR20
+Warning--empty publisher in DBLP:conf/eccv/WooPLK18
+Warning--empty address in DBLP:conf/eccv/WooPLK18
+Warning--empty publisher in DBLP:conf/icmcs/XieCFS14
+Warning--empty address in DBLP:conf/icmcs/XieCFS14
+Warning--empty publisher in DBLP:conf/icassp/YeDL18
+Warning--empty address in DBLP:conf/icassp/YeDL18
+Warning--empty publisher in DBLP:conf/aaai/YinRZF20
+Warning--empty address in DBLP:conf/aaai/YinRZF20
+Warning--empty publisher in DBLP:conf/eccv/ZhangCXJLY18
+Warning--empty address in DBLP:conf/eccv/ZhangCXJLY18
+You've used 54 entries,
+            5901 wiz_defined-function locations,
+            1808 strings with 29329 characters,
+and the built_in function-call counts, 75504 in all, are:
+= -- 9284
+> -- 3276
+< -- 0
++ -- 1102
+- -- 1056
+* -- 5754
+:= -- 7696
+add.period$ -- 270
+call.type$ -- 54
+change.case$ -- 472
+chr.to.int$ -- 50
+cite$ -- 116
+duplicate$ -- 6390
+empty$ -- 4450
+format.name$ -- 1268
+if$ -- 18330
+int.to.chr$ -- 6
+int.to.str$ -- 1
+missing$ -- 246
+newline$ -- 442
+num.names$ -- 428
+pop$ -- 2527
+preamble$ -- 1
+purify$ -- 950
+quote$ -- 0
+skip$ -- 2286
+stack$ -- 0
+substring$ -- 5660
+swap$ -- 740
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 1266
+warning$ -- 62
+while$ -- 385
+width$ -- 0
+write$ -- 936
+(There were 62 warnings)
