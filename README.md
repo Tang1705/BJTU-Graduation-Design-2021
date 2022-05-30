@@ -39,5 +39,5 @@
 
 最后，尤其要感谢 Mr. 张，全程拍摄了我的毕设答辩，是一段很珍贵的视频。
 
-https://user-images.githubusercontent.com/44370086/170417273-ee8ea824-ed0f-475b-a699-0e817d7e4013.mp4
+<!--https://user-images.githubusercontent.com/44370086/170417273-ee8ea824-ed0f-475b-a699-0e817d7e4013.mp4-->
 
