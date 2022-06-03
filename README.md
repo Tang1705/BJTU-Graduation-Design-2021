@@ -25,6 +25,8 @@
 
 至于论文的 $Latex$ 版本，是在非官方硕博学位论文 $Latex$ 的基础上修改的。
 
+偶然看到了 <a href="https://github.com/paulzhn">paulzhn</a> 的工作 <a href="https://github.com/paulzhn/bjtu-bachelor-thesis">bjtu-bachelor-thesis</a>，是针对本科毕业论文开发的模板，还原度较高，而且也有 Overleaf 的在线版本。
+
 ## 写在最后
 
 谨以此作为我那最开心几年的毕业礼物 🎁
