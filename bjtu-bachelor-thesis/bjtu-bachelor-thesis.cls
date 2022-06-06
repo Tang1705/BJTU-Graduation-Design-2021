@@ -1,14 +1,21 @@
-%========================================================================%
-%               Copyright (C) 2016 All Rights Reserved.                  %
-%             Author:BillHu<billhu@icloud.com>  Ver:<1.0>                %
-%========================================================================%
-%    The author grants permission, without fee and without a written     %
-% license agreement, for use, reproduction, modification, and distribu-  %
-% tion of this software and its documentation by educational, research,  %
-% and non-profit entities for noncommercial purposes only.The above      %
-% copyright notice and this paragraph MUST appear in all copies and      %
-% modifications of the software and/or documentation.                    %
-%========================================================================%
+%%
+%% This is file `bjtu-bachelor-thesis.cls'
+%%
+%% ------------------------------------------------------------------------
+%% Copyright (C) 2022 Q.Tang
+%% 
+%% Licensed under the Apache License, Version 2.0 (the "License");
+%% you may not use this file except in compliance with the License.
+%% You may obtain a copy of the License at
+%% 
+%%     http://www.apache.org/licenses/LICENSE-2.0
+%% 
+%% Unless required by applicable law or agreed to in writing, software
+%% distributed under the License is distributed on an "AS IS" BASIS,
+%% WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+%% See the License for the specific language governing permissions and
+%% limitations under the License.
+%% ------------------------------------------------------------------------
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{bjtu-bachelor-thesis}[2022/06/06]
 \def\version{1.1}
@@ -45,11 +52,18 @@
 \RequirePackage{color}
 \RequirePackage{multirow}
 \RequirePackage{float}
-\RequirePackage[linesnumbered,ruled]{algorithm2e}
+\RequirePackage[linesnumbered,ruled,vlined]{algorithm2e}
 \RequirePackage{algpseudocode}
+\RequirePackage{bm}
+\RequirePackage{textcomp}
 \RequirePackage{enumitem}
 \RequirePackage{xcolor}
+\RequirePackage{graphicx}
 \RequirePackage{longtable}
+\RequirePackage[normalem]{ulem}
+\RequirePackage{ragged2e}
+\RequirePackage{blindtext}
+\RequirePackage{adjustbox}
 %========================================================================%
 % 北京交大明确给出的格式
 %========================================================================%
@@ -174,7 +188,7 @@
 }
 \fancypagestyle{plain}{
 \fancyhead{}
-\fancyhead[CE]{\zihao{5}\hspace{2em}北京交通大学硕士学位论文}
+\fancyhead[CE]{\zihao{5}\hspace{2em}北京交通大学毕业设计（论文）}
 \fancyhead[CO]{\zihao{5}\hspace{2em}\leftmark}
 \fancyfoot[CO,CE]{\zihao{-5}\thepage}
 \renewcommand{\headrulewidth}{0.4pt}
@@ -195,6 +209,7 @@
 \newcommand{\advisorsign}[1]{\renewcommand{\advisorsign}{#1}}
 \newcommand{\authorsigndate}[1]{\renewcommand{\authorsigndate}{#1}}
 \newcommand{\advisorsigndate}[1]{\renewcommand{\advisorsigndate}{#1}}
+
 % 插入代码样式
 \definecolor{gray}{rgb}{0.96,0.96,0.96}
 
@@ -229,6 +244,9 @@
   escapeinside={\%*}{*)},            % if you want to add LaTeX within your code
   morekeywords={*,...}               % if you want to add more keywords to the set
 }
+
+\renewcommand{\algorithmicrequire}{\textbf{Input:}}
+\renewcommand{\algorithmicensure}{\textbf{Output:}}
 %========================================================================%
 % 参考文献格式
 %========================================================================%
@@ -412,6 +430,9 @@
 	\markboth{附录}{}
 	\addcontentsline{toc}{part}{附\hspace{2em}录}
 }{}
+
+%% 如果插入的图片没有指定扩展名，那么依次搜索下面的扩展名所对应的文件
+\DeclareGraphicsExtensions{.pdf,.eps,.png,.jpg,.jpeg}
 
 %========================================================================%
 % 结束
