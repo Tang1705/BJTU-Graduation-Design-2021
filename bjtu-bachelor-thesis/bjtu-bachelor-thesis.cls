@@ -122,9 +122,14 @@
 }
 
 \setlength{\itemsep}{100pt}
+\setlength{\abovedisplayskip}{-5cm}
+\setlength{\belowdisplayskip}{-5cm}
 \captionsetup[table]{labelsep=space} % 表
-\captionsetup[figure]{labelsep=space} % 图  
+\captionsetup[figure]{labelsep=space} % 图 
 
+\let\oldequation=\equation
+\let\endoldequation=\endequation
+\renewenvironment{equation}{\vspace{-0.7cm}\begin{oldequation}}{\vspace{-0.3cm}\end{oldequation}\ignorespacesafterend}
 %========================================================================%
 \newcommand{\figcaption}[1]{\caption{图}{#1}}
 %========================================================================%
@@ -247,6 +252,8 @@
 
 \renewcommand{\algorithmicrequire}{\textbf{Input:}}
 \renewcommand{\algorithmicensure}{\textbf{Output:}}
+
+
 %========================================================================%
 % 参考文献格式
 %========================================================================%
