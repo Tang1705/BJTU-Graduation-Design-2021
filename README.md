@@ -33,7 +33,7 @@ LaTeX 模板是在 <a href="https://github.com/paulzhn">paulzhn</a> 的工作 <a
 
 <div align="center"><img src="./image/thesis.png" alt="" width="45%"></div>
 
-时隔一年，想起那段四个人写论文的日子，还是会无比怀念。夜晚、投影、音乐剧、论文、制冰机、炸豆腐，怎么能不怀念呢？
+时隔一年，想起那段四个人写论文的日子，还是会无比怀念。夜晚、投影、音乐剧、论文、调酒、制冰机、高粱怡、炸豆腐……怎么能不怀念呢？
 
 <div align="center" style="margin-left: 2rem"><img src="./image/1305.jpg" alt="" width=40%"></div>
 
