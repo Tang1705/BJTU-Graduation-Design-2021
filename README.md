@@ -23,7 +23,7 @@
 
 在这段整理、制作的时间里，我也复刻出了一套这一风格的 Beamer 主题。由于水平有限，当前版本重在实现原 PPT 模板的风格，远不及 SJTU-Beamer 的代码优良、文档丰富，感兴趣的友人可以去学习借鉴。也欢迎喜欢该主题风格的朋友基于当前版本改进
 
-LaTeX 模板是在 <a href="https://github.com/paulzhn">paulzhn</a> 的工作 <a href="https://github.com/paulzhn/bjtu-bachelor-thesis">bjtu-bachelor-thesis</a> 的基础上修改的，对封面、文件结构、命令进行了修改，并提供了一些使用示例。但不建议使用 LaTeX 对本科论文进行排版，虽然 LaTeX 和 Word 相比更容易进行样式管理，但在官方模板发布之前，所有非官方的模板都仅供参考和二次开发。此外， Word 编写的论文更便于知道老师进行批注和修改，且为北京交通大学本科生毕业设计（论文）规范中的要求。
+LaTeX 模板是在 <a href="https://github.com/paulzhn">paulzhn</a> 的工作 <a href="https://github.com/paulzhn/bjtu-bachelor-thesis">bjtu-bachelor-thesis</a> 的基础上修改的，对封面、文件结构、命令进行了修改，并提供了一些使用示例。但不建议使用 LaTeX 对本科论文进行排版，虽然 LaTeX 和 Word 相比更容易进行样式管理，但在官方模板发布之前，所有非官方的模板都仅供参考和二次开发。此外， Word 编写的论文更便于指导老师进行批注和修改，且为北京交通大学本科生毕业设计（论文）规范中的要求。
 
 ## 写在最后
 
