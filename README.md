@@ -10,8 +10,8 @@
   - 📄 document 任务书、开题报告、毕业论文
   - 🖥️ presentation 答辩 PPT
 - 🎓 bjtu-ppt PPT 模板
-- 🎓 bjtu-beamer Beamer 模板
-- 🎓 bjtu-bachelor-thesis LaTeX 模板
+- 🎓 bjtu-beamer Beamer 模板 <a href="https://github.com/Tang1705/BJTU-Beamer">【Latest Version】</a>
+- 🎓 bjtu-bachelor-thesis LaTeX 模板 <a href="https://github.com/Tang1705/BJTU-Bachelor-Thesis">【Latest Version】</a>
 - 🎉 bridgenet 英文论文
 - 📝 paper-reading 周报
 
@@ -41,3 +41,5 @@ LaTeX 模板是在 <a href="https://github.com/paulzhn">paulzhn</a> 的工作 <a
 
 <!--https://user-images.githubusercontent.com/44370086/170417273-ee8ea824-ed0f-475b-a699-0e817d7e4013.mp4-->
 
+
+  [1]: https://github.com/Tang1705/BJTU-Bachelor-Thesis
